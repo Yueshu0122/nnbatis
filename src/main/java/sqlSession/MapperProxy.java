@@ -38,6 +38,7 @@ public class MapperProxy implements InvocationHandler {
                 }
             }
         }
+
         return null;
     }
 }

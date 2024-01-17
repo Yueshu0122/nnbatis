@@ -13,6 +13,8 @@ public class SqlSession {
         return executor.query(statement,para);
     }
 
+
+
     public <T> T getMapper(Class<T> clazz){
         return (T) Proxy.newProxyInstance(clazz.getClassLoader(),new Class[]{clazz},
                 new MapperProxy(nnbatisConfiguration,this,clazz));
