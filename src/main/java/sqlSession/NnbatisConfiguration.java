@@ -1,7 +1,6 @@
 package sqlSession;
 
 import org.dom4j.Document;
-import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
@@ -10,7 +9,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class nnbatisConfiguration {
+public class NnbatisConfiguration {
     private static ClassLoader loader =
             ClassLoader.getSystemClassLoader();
 
