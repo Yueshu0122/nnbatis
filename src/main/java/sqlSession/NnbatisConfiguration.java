@@ -26,11 +26,11 @@ public class NnbatisConfiguration {
             SAXReader reader = new SAXReader();
             Document document = reader.read(stream);
             Element root = document.getRootElement();
-
+            return evalDataSource(root);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        return null;
+
     }
 
     private Connection evalDataSource(Element node){

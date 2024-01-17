@@ -22,6 +22,7 @@ public class NnExecutor implements Executor {
         try {
             pre = connection.prepareStatement(statement);
             pre.setString(1,parameter.toString());
+            set = pre.executeQuery();
 
             Monster monster = new Monster();
 
@@ -52,7 +53,6 @@ public class NnExecutor implements Executor {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
-            return null;
         }
 
     }
